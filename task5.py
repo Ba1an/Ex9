@@ -2,6 +2,7 @@ class Game:
     '''
     The class representing the game.
     '''
+
     def __init__(self, score):
         '''
         Initializes an instance of the Game class.
@@ -53,9 +54,9 @@ class Game:
         '''
         return self.__str__()
 
-game1 = Game({'command1': 0,  'command2': 0})
+
+game1 = Game({'command1': 0, 'command2': 0})
 game1.ball_thrown('command1', 1)
 game1.get_score()
 game1.ball_thrown('command2', 1)
 print(game1.get_winner())
-

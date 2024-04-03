@@ -2,6 +2,7 @@ class Dog:
     """
     A class representing a dog.
     """
+
     def __init__(self, name=None):
         """
         Initializes an instance of the Dog class.

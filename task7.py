@@ -37,6 +37,7 @@ class TrafficLight:
         '''
         return self.__str__()
 
+
 traffic_light = TrafficLight()
 print(traffic_light.current_signal)
 

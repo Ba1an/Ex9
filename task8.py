@@ -9,6 +9,7 @@ class MorseMsg:
                   '..-': ('U', 'У'), '...-': ('V', 'Ж'), '.--': ('W', 'В'), '-..-': ('X', 'Ь'), '-.--': ('Y', 'Ы'),
                   '--..': ('Z', 'З'), '.-.-': ('', 'я')}
     glas = 'АЕЁИОУЫЭЮAEIOUY'
+
     def __init__(self, str):
         '''
         method for initialization
@@ -28,7 +29,6 @@ class MorseMsg:
                 if key == i:
                     s += value[0] + ' '
         return s
-
 
     def ru_decode(self):
         '''
@@ -94,6 +94,7 @@ class MorseMsg:
         :return: string with a message
         '''
         return self.__str__()
+
 
 first = MorseMsg('-.-- --- ..- ... .... --- ..- .-.. -.. --- .. - ')
 second = MorseMsg('- -.-- ... ----. --..--- ..---...-.')

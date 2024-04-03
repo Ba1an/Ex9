@@ -2,6 +2,7 @@ class StrandsDNA:
     '''
     Class for dna chains
     '''
+
     def __init__(self, all_strands=[]):
         '''
         method for initialization
@@ -55,5 +56,3 @@ class StrandsDNA:
 
 a1 = StrandsDNA(['ABCD', 'ADC', 'AD', 'ADDC', 'RTH', 'ABCD', 'ABHE'])
 print(a1.get_max_strands())
-
-

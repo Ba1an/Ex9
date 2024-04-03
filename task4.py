@@ -2,6 +2,7 @@ class User:
     '''
     Class of users.
     '''
+
     def __init__(self, id, nick_name, first_name, last_name=None, middle_name=None, gender=None):
         '''
         method for initialization

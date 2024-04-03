@@ -2,6 +2,7 @@ class NotSleeping:
     '''
     A class representing a person who cannot sleep.
     '''
+
     def __init__(self, name=None):
         '''
         method for initialization

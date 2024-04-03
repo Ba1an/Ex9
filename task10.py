@@ -2,7 +2,8 @@ class Point:
     '''
     A class representing a point on the plane.
     '''
-    def __init__(self, tup=(0,0)):
+
+    def __init__(self, tup=(0, 0)):
         '''
         Initializes an instance of the Point class.
         :param tup: Tuple with point coordinates (x, y). By default (0, 0).
@@ -29,7 +30,7 @@ class Point:
         :param other: Another point.
         :return: The distance between the points.
         '''
-        return ((self.get_x() - other.get_x())**2 + (self.get_y() - other.get_y())**2)**0.5
+        return ((self.get_x() - other.get_x()) ** 2 + (self.get_y() - other.get_y()) ** 2) ** 0.5
 
     def sum(self, other):
         '''
@@ -53,10 +54,12 @@ class Point:
         '''
         return self.__str__()
 
+
 class Segment:
     '''
     Class of segments
     '''
+
     def __init__(self, point1, point2):
         """
         method for initialization
@@ -75,6 +78,7 @@ class CoordinateSystem:
     '''
     Class of coordinate systems
     '''
+
     def __init__(self):
         '''
         method for initialization
@@ -114,14 +118,14 @@ class CoordinateSystem:
         '''
         return self.__str__()
 
+
 point1 = Point((1, 2))
 point2 = Point((2, 3))
-s1 = Segment(point1,point2)
+s1 = Segment(point1, point2)
 point3 = Point((0, 3))
 point4 = Point((-1, 2))
-s2 = Segment(point3,point4)
+s2 = Segment(point3, point4)
 c = CoordinateSystem()
 c.add_segment(s1)
 c.add_segment(s2)
 print(c.axis_intersection())
-

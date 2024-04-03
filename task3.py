@@ -6,6 +6,7 @@ class NotSleeping:
     '''
     Class for person that is not sleeping
     '''
+
     def __init__(self, name):
         '''
         method for initialization

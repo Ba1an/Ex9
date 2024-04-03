@@ -2,7 +2,8 @@ class Point:
     '''
     A class representing a point on the plane.
     '''
-    def __init__(self, tup=(0,0)):
+
+    def __init__(self, tup=(0, 0)):
         '''
         Initializes an instance of the Point class.
         :param tup: Tuple with point coordinates (x, y). By default (0, 0).
@@ -29,7 +30,7 @@ class Point:
         :param other: Another point.
         :return: The distance between the points.
         '''
-        return ((self.get_x() - other.get_x())**2 + (self.get_y() - other.get_y())**2)**0.5
+        return ((self.get_x() - other.get_x()) ** 2 + (self.get_y() - other.get_y()) ** 2) ** 0.5
 
     def sum(self, other):
         '''
@@ -52,6 +53,7 @@ class Point:
         :return: string with teams' info
         '''
         return self.__str__()
+
 
 first = Point((2, 4))
 second = Point()
