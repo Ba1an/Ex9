@@ -57,16 +57,18 @@ class Segment:
     '''
     Class of segments
     '''
-    def __init__(self, point1, point2, one_intersection):
-        '''
+    def __init__(self, point1, point2):
+        """
         method for initialization
         :param point1:first point
         :param point2: second point
-        :param one_intersection: nothing
-        '''
+        """
         self.point1 = point1
         self.point2 = point2
-        self.one_intersection = one_intersection
+        if (point1.get_x() * point2.get_x() < 0) != (point1.get_y() * point2.get_y() < 0):
+            self.one_intersection = True
+        else:
+            self.one_intersection = False
 
 
 class CoordinateSystem:
@@ -114,10 +116,10 @@ class CoordinateSystem:
 
 point1 = Point((1, 2))
 point2 = Point((2, 3))
-s1 = Segment(point1,point2, False)
+s1 = Segment(point1,point2)
 point3 = Point((0, 3))
 point4 = Point((-1, 2))
-s2 = Segment(point3,point4,True)
+s2 = Segment(point3,point4)
 c = CoordinateSystem()
 c.add_segment(s1)
 c.add_segment(s2)
