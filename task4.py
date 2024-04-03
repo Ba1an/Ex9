@@ -51,8 +51,8 @@ class User:
         method for string representation
         :return: string with person's info
         """
-        return (f"User(id={self.id}, nick_name='{self.nick_name}', first_name='{self.first_name}', "
-                f"last_name='{self.last_name}', middle_name='{self.middle_name}', gender='{self.gender}')")
+        return (f"User(id={self.id}, nick_name={self.nick_name}, first_name={self.first_name}, "
+                f"last_name={self.last_name}, middle_name={self.middle_name}, gender={self.gender})")
 
     def __repr__(self):
         '''
@@ -63,4 +63,5 @@ class User:
 
 
 No1 = User(9999, 'Sti', 'Stiven', gender='male')
-No1.update(id, '2222')
+No1.update()
+print(No1.__str__())
